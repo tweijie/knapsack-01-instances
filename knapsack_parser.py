@@ -90,14 +90,14 @@ class KnapsackInstance:
 def main():
     # Test with instances of different sizes
     instances = [
-        r"c:\Users\wtan\phd-optimacs\AA-all-repos\instances\knapsack-01\low-dimensional\f3_l-d_kp_4_20",
-        r"c:\Users\wtan\phd-optimacs\AA-all-repos\instances\knapsack-01\low-dimensional\f1_l-d_kp_10_269",
-        r"c:\Users\wtan\phd-optimacs\AA-all-repos\instances\knapsack-01\large_scale\knapPI_1_100_1000_1",
+        "low-dimensional/f3_l-d_kp_4_20",
+        "low-dimensional/f1_l-d_kp_10_269",
+        "large_scale/knapPI_1_100_1000_1",
     ]
 
-    for test_file in instances:
-        print(f"\nParsing instance: {os.path.basename(test_file)}")
-        instance = KnapsackInstance.parse_knapsack_file(test_file)
+    for instance_file in instances:
+        print(f"\nParsing instance: {os.path.basename(instance_file)}")
+        instance = KnapsackInstance.parse_knapsack_file(instance_file)
         instance.print()
 
 
