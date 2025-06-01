@@ -26,7 +26,7 @@ Each instance file is structured as follows:
 - Optionally, the last line may contain $N$ binary values (0 or 1), representing the optimal solution.
 
 
-## Dataset Property
+## Dataset Property \[2]
 | Data Set  | Low-dimensional | Uncorrelated high-dimensional | Weakly correlated high-dimensional | Strongly correlated high-dimensional |
 | --- | --- | --- | --- | --- |
 | Filename Pattern | `f*` | `knapPI_1_*` | `knapPI_2_*` | `knapPI_3_*` |
