@@ -26,14 +26,14 @@ Each instance file is structured as follows:
 - Optionally, the last line may contain $N$ binary values (0 or 1), representing the optimal solution.
 
 
-## Dataset Property (from \[2])
-| Data Set  | Low-dimensional | Uncorrelated high-dimensional | Weakly correlated high-dimensional | Strongly correlated high-dimensional |
-| --- | --- | --- | --- | --- |
-| Filename Pattern | `f*` | `knapPI_1_*` | `knapPI_2_*` | `knapPI_3_*` |
-| Number of Items $N$ | 4-20 | 100-10,000 | 100-10,000 | 100-10,000 |
-| Item Weights $w_i$ | - | Rand(10, 100) | Rand(10, 100) | Rand(10, 100) |
-| Item Values $v_i$| - | Rand(10, 100) | Rand($w_i$ - 10, $w_i$ + 10) | $w_i + 10$ |
-| Knapsack Capacity $C$ | - | 0.75 $\times$ sum of weights | 0.75 $\times$ sum of weights | 0.75 $\times$ sum of weights |
+## Dataset Property
+| Data Set              | Low-dimensional | Uncorrelated high-dimensional | Weakly correlated high-dimensional | Strongly correlated high-dimensional |
+|-----------------------|:---------------:|:-----------------------------:|:----------------------------------:|:------------------------------------:|
+| Filename Pattern      |      `f*`       |         `knapPI_1_*`          |            `knapPI_2_*`            |             `knapPI_3_*`             |
+| Number of Items $N$   |      4-20       |          100-10,000           |             100-10,000             |              100-10,000              |
+| Item Weights $w_i$    |        -        |         Rand(10, 100)         |           Rand(10, 100)            |            Rand(10, 100)             |
+| Item Values $v_i$     |        -        |         Rand(10, 100)         |   Rand($w_i$ - 100, $w_i$ + 100)   |             $w_i + 100$              |
+| Knapsack Capacity $C$ |        -        | 0.75 $\times$ sum of weights  |    0.75 $\times$ sum of weights    |     0.75 $\times$ sum of weights     |
 
 
 ---
