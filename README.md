@@ -30,10 +30,10 @@ Each instance file is structured as follows:
 | Data Set              | Low-dimensional | Uncorrelated high-dimensional | Weakly correlated high-dimensional | Strongly correlated high-dimensional |
 |-----------------------|:---------------:|:-----------------------------:|:----------------------------------:|:------------------------------------:|
 | Filename Pattern      | `f\d+_l-d_kp_.*` |        `knapPI_1_.*`         |           `knapPI_2_.*`            |            `knapPI_3_.*`             |
-| Number of Items $N$   |      4-20       |          100-10,000           |             100-10,000             |              100-10,000              |
-| Item Weights $w_i$    |        -        |         Rand(1, 1000)         |           Rand(1, 1000)            |            Rand(1, 1000)             |
-| Item Values $v_i$     |        -        |         Rand(1, 1000)         |   Rand($w_i$ - 100, $w_i$ + 100)   |             $w_i + 100$              |
-| Knapsack Capacity $C$ |        -        |  $\approx$ 1-2% $\Sigma w_i$  |    $\approx$ 1-2% $\Sigma w_i$     |      $\approx$ 1-2% $\Sigma w_i$     |
+| Number of Items $N$   |      4-23       |          100-10,000           |             100-10,000             |              100-10,000              |
+| Item Weights $w_i$    |      1-983      |         Rand(1, 1000)         |           Rand(1, 1000)            |            Rand(1, 1000)             |
+| Item Values $v_i$     |      1-981      |         Rand(1, 1000)         |   Rand($w_i$ - 100, $w_i$ + 100)   |             $w_i + 100$              |
+| Knapsack Capacity $C$ |    11-10000     |  $\approx$ 1-2% $\Sigma w_i$  |    $\approx$ 1-2% $\Sigma w_i$     |      $\approx$ 1-2% $\Sigma w_i$     |
 
 
 ---
