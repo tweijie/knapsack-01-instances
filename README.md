@@ -33,7 +33,7 @@ Each instance file is structured as follows:
 | Number of Items $N$   |      4-20       |          100-10,000           |             100-10,000             |              100-10,000              |
 | Item Weights $w_i$    |        -        |         Rand(1, 1000)         |           Rand(1, 1000)            |            Rand(1, 1000)             |
 | Item Values $v_i$     |        -        |         Rand(1, 1000)         |   Rand($w_i$ - 100, $w_i$ + 100)   |             $w_i + 100$              |
-| Knapsack Capacity $C$ |        -        | $\approx$ 1-2% $\times \Sigma w_i$ | $\approx$ 1-2% $\times \Sigma w_i$ | $\approx$ 1-2% $\times \Sigma w_i$ |
+| Knapsack Capacity $C$ |        -        |  $\approx$ 1-2% $\Sigma w_i$  |    $\approx$ 1-2% $\Sigma w_i$     |      $\approx$ 1-2% $\Sigma w_i$     |
 
 
 ---
